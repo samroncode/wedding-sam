@@ -7,25 +7,25 @@ const Countdown = () => {
   const [days, hours, minutes, seconds] = useCountdown(countdownDate);
 
   return (
-    <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+    <div className="flex flex-col gap-7 lg:grid lg:grid-flow-col lg:gap-5 text-center auto-cols-max">
       <DaysContent days={days} />
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
+        <span className="countdown font-mono text-5xl justify-center">
           <span style={{ "--value": `${hours}` } as CSSProperties}></span>
         </span>
-        hours
+        <span className="mt-3">timmar</span>
       </div>
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
+        <span className="countdown font-mono text-5xl justify-center">
           <span style={{ "--value": `${minutes}` } as CSSProperties}></span>
         </span>
-        min
+        <span className="mt-3">minuter</span>
       </div>
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
+        <span className="countdown font-mono text-5xl justify-center">
           <span style={{ "--value": `${seconds}` } as CSSProperties}></span>
         </span>
-        sec
+        <span className="mt-3">sekunder</span>
       </div>
     </div>
   );
@@ -42,16 +42,16 @@ const DaysContent = ({ days }: IDaysContent) => {
         <span className="font-mono text-5xl">
           <span>{days}</span>
         </span>
-        days
+        <span className="mt-3">dagar</span>
       </div>
     );
   } else {
     return (
       <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
+        <span className="countdown font-mono text-5xl justify-center">
           <span style={{ "--value": `${days}` } as CSSProperties}></span>
         </span>
-        days
+        <span className="mt-3">dagar</span>
       </div>
     );
   }
