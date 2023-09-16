@@ -3,7 +3,7 @@
 import ContactForm from "./components/Form";
 import Countdown from "./components/Countdown";
 import RSVPSection from "./sections/RSVPSection";
-import CountdownSection from "./sections/CountDownSection";
+import CountdownSection from "./sections/CountdownSection";
 
 export default function Home() {
   return (
