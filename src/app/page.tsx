@@ -5,10 +5,11 @@ import Countdown from "./components/Countdown";
 import RSVPSection from "./sections/RSVPSection";
 import CountdownSection from "./sections/CountdownSection";
 import ToastMastersSection from "./sections/ToastMastersSection";
+import { useSearchParams } from "next/navigation";
 
 export default function Home() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const staging = urlParams.get("staging");
+  const searchParams = useSearchParams();
+  const staging = searchParams.has("staging");
 
   return (
     <>
