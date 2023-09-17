@@ -3,6 +3,7 @@
 import React, { SyntheticEvent, useState } from "react";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { JWT } from "google-auth-library";
+import Toggle from "./Toggle";
 
 type ContactForm = {
   firstName: string;
@@ -187,22 +188,11 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label
-              htmlFor="speech"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              Önskar du hålla tal?
-            </label>
-            <div className="mt-2.5 h-3">
-              <input
-                name="speech"
-                id="speech"
-                type="checkbox"
-                className="block rounded-md border-0 px-3 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                checked={form.speech}
-                onChange={e => setForm({ ...form, speech: e.target.checked })}
-              />
-            </div>
+            <Toggle
+              enabled={form.speech}
+              setEnabled={e => setForm({ ...form, speech: !form.speech })}
+              text="Jag önskar hålla tal."
+            />
           </div>
         </div>
         <div className="mt-10">

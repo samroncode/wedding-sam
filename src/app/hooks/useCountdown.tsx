@@ -3,21 +3,21 @@
 import { useEffect, useState } from "react";
 
 const useCountdown = (targetDate: string) => {
-  const countDownDate = new Date(targetDate).getTime();
+  const countdownDate = new Date(targetDate).getTime();
 
-  const [countDown, setCountDown] = useState(
-    countDownDate - new Date().getTime()
+  const [countdown, setCountDown] = useState(
+    countdownDate - new Date().getTime()
   );
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCountDown(countDownDate - new Date().getTime());
+      setCountDown(countdownDate - new Date().getTime());
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [countDownDate]);
+  }, [countdownDate]);
 
-  return getReturnValues(countDown);
+  return getReturnValues(countdown);
 };
 
 const getReturnValues = (countDown: number) => {
