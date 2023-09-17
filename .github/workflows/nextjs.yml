@@ -79,7 +79,7 @@ jobs:
           NEXT_PUBLIC_SHEET_ID: ${{ vars.NEXT_PUBLIC_SHEET_ID }}
           NEXT_PUBLIC_SPREADSHEET_ID: ${{ vars.NEXT_PUBLIC_SPREADSHEET_ID }}
           GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY}}
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build | echo ${{ vars.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build 
 
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
