@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const { GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY } = process.env;
-
 module.exports = {
   output: "export",
   images: { loader: "akamai", path: "" },
@@ -15,6 +13,7 @@ module.exports = {
     return config;
   },
   env: {
-    GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY
+    GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY:
+      process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY
   }
 };
