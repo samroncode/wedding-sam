@@ -89,6 +89,11 @@ jobs:
 
   # Deployment job
   deploy:
+    env: 
+      NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ vars.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+      NEXT_PUBLIC_SHEET_ID: ${{ vars.NEXT_PUBLIC_SHEET_ID }}
+      NEXT_PUBLIC_SPREADSHEET_ID: ${{ vars.NEXT_PUBLIC_SPREADSHEET_ID }}
+      GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY }}  
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
