@@ -75,6 +75,11 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env: 
+          NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ vars.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          NEXT_PUBLIC_SHEET_ID: ${{ vars.NEXT_PUBLIC_SHEET_ID }}
+          NEXT_PUBLIC_SPREADSHEET_ID: ${{ vars.NEXT_PUBLIC_SPREADSHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY}}
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
