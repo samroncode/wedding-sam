@@ -20,7 +20,7 @@
     "eslint-config-next": "13.4.19",
     "google-auth-library": "^9.0.0",
     "google-spreadsheet": "^4.1.0",
-    "next": "13.4.19",
+    "next": "13.4.13",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
