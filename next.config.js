@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
-  output: "export",
+  // output: "export",
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;
@@ -12,8 +12,8 @@ module.exports = {
     return config;
   },
   env: {
-    NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY:
-      process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
+    GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY:
+      process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
     NEXT_PUBLIC_SPREADSHEET_ID: process.env.NEXT_PUBLIC_SPREADSHEET_ID,
     NEXT_PUBLIC_SHEET_ID: process.env.NEXT_PUBLIC_SHEET_ID,
     NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL:
