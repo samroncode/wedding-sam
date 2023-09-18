@@ -3,8 +3,7 @@
 import React, { SyntheticEvent, useEffect, useState } from "react";
 import Toggle from "./Toggle";
 import Input from "./Input";
-import { TextValidator } from "../utils/validators/TextValidator";
-import { PhoneNumberValidator } from "../utils/validators/PhoneNumberValidator";
+import { TextValidator } from "../utils/validators/textValidator";
 import { NotEmptyValidator } from "../utils/validators/NotEmptyValidator";
 
 type ContactForm = {
