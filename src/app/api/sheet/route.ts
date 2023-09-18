@@ -6,11 +6,11 @@ export async function POST(request: Request) {
   const GOOGLE_SERVICE_ACCOUNT_EMAIL =
     process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL;
   const GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY =
-    process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+    (process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY);
 
   const serviceAccountAuth = new JWT({
     email: GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    key: GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
+    key: GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY?.replace(/\\n/g, '\n'),
     scopes: ["https://www.googleapis.com/auth/spreadsheets"]
   });
 
