@@ -25,10 +25,10 @@ const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
           <p>
             <a
               href={`tel:${phoneNumber}`}
-              className="flex flex-row text-gray-400 hover:text-gray-500 ml-2"
+              className="flex flex-row text-gray-400 hover:text-gray-500"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5 mr-3"
                 viewBox="0 0 24 24"
                 id="phone_number"
                 data-name="phone number"
@@ -48,8 +48,8 @@ const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
                     transform="translate(4.393 6.587) rotate(-30)"
                     fill="none"
                     stroke="#b3b3b3"
-                    stroke-miterlimit="10"
-                    stroke-width="1.5"
+                    strokeMiterlimit="10"
+                    strokeWidth="1.5"
                   />
                 </g>
               </svg>
