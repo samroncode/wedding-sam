@@ -4,23 +4,14 @@ import { Person } from "../models/Person";
 const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
   return (
     <li key={name}>
-      {/* <Image
-        src={imageUrl}
-        alt={""}
-        className="mx-auto h-56 w-56 rounded-full"
-        width={100}
-        height={100}
-      /> */}
-      <img
-        className="mx-auto h-56 w-56 rounded-full"
-        src={imageUrl}
-        alt="bild på person"
-      />
+      <div className="mx-auto rounded-full relative w-52 h-52 overflow-hidden">
+        <Image src={imageUrl} alt={""} fill />
+      </div>
       <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
         {name}
       </h3>
       <p className="text-sm leading-6 text-gray-600">{role}</p>
-      <ul role="list" className="mt-6 flex justify-center gap-x-6">
+      <ul role="list" className="mt-2 flex justify-center gap-x-6">
         <li>
           <p>
             <a

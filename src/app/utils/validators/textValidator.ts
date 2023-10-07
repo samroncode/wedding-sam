@@ -1,5 +1,6 @@
 export const TextValidator = (value: string, min?: number, max?: number) => {
-  const pattern = /^[A-Za-z\s]*$/; // matches strings with at least one non-whitespace character
+  // const pattern = /^[A-Za-z\s]*$/; // matches strings with at least one non-whitespace character
+  const pattern = /^.*\S.*$/;
   const normStrValue = (value || "").trim();
   const nrChars = normStrValue.length;
 

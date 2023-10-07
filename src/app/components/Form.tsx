@@ -5,6 +5,7 @@ import Toggle from "./Toggle";
 import Input from "./Input";
 import { TextValidator } from "../utils/validators/textValidator";
 import { NotEmptyValidator } from "../utils/validators/NotEmptyValidator";
+import Button from "./Button";
 
 type ContactForm = {
   firstName: string;
@@ -30,6 +31,10 @@ const ContactForm = () => {
     "idle" | "pending" | "error" | "success"
   >("idle");
 
+  const resetForm = () => {
+    setForm(initialForm);
+  };
+
   const submitForm = async (e: SyntheticEvent) => {
     e.preventDefault();
 
@@ -43,6 +48,8 @@ const ContactForm = () => {
       "Önskar hålla tal": form.speech ? "Ja" : "Nej"
     };
 
+    setRequestStatus("pending");
+
     try {
       const response = await fetch("/api/sheet", {
         method: "POST",
@@ -54,6 +61,11 @@ const ContactForm = () => {
 
       if (response.status === 200) {
         setRequestStatus("success");
+
+        setTimeout(() => {
+          setRequestStatus("idle");
+          resetForm();
+        }, 6000);
       }
     } catch (error) {
       setRequestStatus("error");
@@ -67,22 +79,26 @@ const ContactForm = () => {
     setFormValid(TextValidator(firstName) && TextValidator(lastName));
   }, [form]);
 
-  const inputDisabled =
+  const inputsDisabled =
     requestStatus === "pending" || requestStatus === "success";
+  const buttonDisabled = !formValid || requestStatus === "pending";
+
+  let buttonText = "Skicka";
+
+  if (requestStatus === "success") {
+    buttonText = "Tack för din anmälan";
+  }
 
   return (
-    <div className=" bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="w-full bg-white px-0 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          RSVP
+        <h2 className="text-3xl tracking-tight text-gray-900 sm:text-4xl">
+          O.S.A
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
-        </p>
       </div>
       <form
         action="#"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto mt-12 lg:mt-16 w-full max-w-3xl "
         onSubmit={submitForm}
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -94,7 +110,7 @@ const ContactForm = () => {
             autoComplete="given-name"
             value={form.firstName}
             onChange={e => setForm({ ...form, firstName: e.target.value })}
-            disabled={inputDisabled}
+            disabled={inputsDisabled}
             validator={TextValidator}
             errorMessage={
               !form.firstName
@@ -110,7 +126,7 @@ const ContactForm = () => {
             autoComplete="family-name"
             value={form.lastName}
             onChange={e => setForm({ ...form, lastName: e.target.value })}
-            disabled={inputDisabled}
+            disabled={inputsDisabled}
             validator={TextValidator}
             errorMessage={
               !form.firstName
@@ -127,7 +143,7 @@ const ContactForm = () => {
             placeholder="0701234567"
             value={form.phone}
             onChange={e => setForm({ ...form, phone: e.target.value })}
-            disabled={inputDisabled}
+            disabled={inputsDisabled}
             validator={NotEmptyValidator}
             errorMessage={
               !form.firstName
@@ -150,7 +166,7 @@ const ContactForm = () => {
                 placeholder="Har du inga allergier eller preferenser kan du lämna detta fält tomt."
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 value={form.allergies_preferences}
-                disabled={inputDisabled}
+                disabled={inputsDisabled}
                 onChange={e =>
                   setForm({ ...form, allergies_preferences: e.target.value })
                 }
@@ -162,18 +178,18 @@ const ContactForm = () => {
               toggled={form.speech}
               setToggled={e => setForm({ ...form, speech: !form.speech })}
               text="Jag önskar hålla tal."
-              disabled={inputDisabled}
+              disabled={inputsDisabled}
             />
           </div>
         </div>
         <div className="mt-10">
-          <button
+          <Button
+            text={buttonText}
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            disabled={!formValid || inputDisabled}
-          >
-            Skicka anmälan
-          </button>
+            disabled={buttonDisabled}
+            loading={requestStatus === "pending"}
+            loadingText="Skickar ..."
+          />
         </div>
       </form>
     </div>

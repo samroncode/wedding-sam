@@ -3,12 +3,40 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply font-josefinSans;
+  }
   section {
-    @apply flex items-center lg:py-10;
+    @apply flex items-center py-8 lg:py-10;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  span,
+  label,
+  input,
+  textarea,
+  button,
+  dd,
+  dt {
+    @apply font-josefinSans text-black;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
   }
 }
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -20,18 +48,17 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
 }
 
 .mobile-full-height {
-  height: 100svh;
+  min-height: 100svh;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }

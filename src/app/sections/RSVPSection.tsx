@@ -2,7 +2,7 @@ import ContactForm from "../components/Form";
 
 const RSVPSection = () => {
   return (
-    <section>
+    <section className="w-full">
       <ContactForm />
     </section>
   );
