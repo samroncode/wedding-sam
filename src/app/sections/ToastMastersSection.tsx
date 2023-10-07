@@ -36,7 +36,7 @@ const ToastMastersSection = () => {
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
             Har du frågor eller liknande så kan du höra av dig till någon av
-            våra toastmastrar.
+            våra toastmasters.
           </p>
         </div>
         <ul
