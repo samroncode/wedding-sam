@@ -21,7 +21,8 @@ const config: Config = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        branch: "#B7BAAD"
+        branch: "#B7BAAD",
+        "branch-dark": "#808279"
       },
       animation: {
         fadeDown: "fadeDown 2s ease-in-out infinite"
@@ -30,8 +31,7 @@ const config: Config = {
         fadeDown: {
           "0%": { transform: "translateY(0)", opacity: "1" },
           "70%": { transform: "translateY(240%)", opacity: "1" },
-          "100%": { transform: "translateY(240%)", opacity: "0" },
-          // "100%": { transform: "translateY(17px)", opacity: "0" }
+          "100%": { transform: "translateY(240%)", opacity: "0" }
         }
       }
     }

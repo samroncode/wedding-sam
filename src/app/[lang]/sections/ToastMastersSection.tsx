@@ -1,9 +1,10 @@
+"use client";
+import elin from "../../../../public/elin.jpeg";
+import cemil from "../../../../public/cemil.jpeg";
+import isabella from "../../../../public/isabella.jpeg";
+import { Person } from "@/app/models/Person";
 import PersonCard from "../components/PersonCard";
-import { Person } from "../models/Person";
-
-import elin from "../../../public/elin.jpeg";
-import cemil from "../../../public/cemil.jpeg";
-import isabella from "../../../public/isabella.jpeg";
+import { useDictionaries } from "@/app/context/dictionaryContext";
 
 const people: Person[] = [
   {
@@ -27,16 +28,16 @@ const people: Person[] = [
 ];
 
 const ToastMastersSection = () => {
+  const { toastmastersSection } = useDictionaries();
   return (
     <section>
       <div className="mx-auto max-w-7xl text-center px-0 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Möt våra toastmasters
+            {toastmastersSection.title}
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Har du frågor eller liknande så kan du höra av dig till någon av
-            våra toastmasters.
+            {toastmastersSection.paragraph}
           </p>
         </div>
         <ul

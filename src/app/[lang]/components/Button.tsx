@@ -1,3 +1,5 @@
+"use client"
+
 type Button =
   | React.DetailedHTMLProps<
       React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -20,8 +22,9 @@ const Button = ({
   return (
     <button
       disabled={disabled}
-      className="block w-full rounded-md bg-branch px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
-      disabled:bg-slate-400 disabled:cursor-not-allowed"
+      className="block w-full rounded-md bg-branch px-3.5 py-2.5 text-center text-lg font-semibold text-white shadow-sm hover:bg-branch-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-branch-dark
+      disabled:bg-slate-300 disabled:cursor-not-allowed"
+      onClick={onClick}
       {...rest}
     >
       {loading && (

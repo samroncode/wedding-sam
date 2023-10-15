@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import { Switch } from "@headlessui/react";
-import { classNames } from "../utils/ClassNames";
+import { classNames } from "../../utils/ClassNames";
 
 interface IToggle {
   toggled: boolean;

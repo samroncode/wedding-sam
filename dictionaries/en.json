@@ -1,0 +1,78 @@
+{
+  "heroSection": {
+    "and": "and"
+  },
+  "countdownSection": {
+    "days": "days",
+    "hours": "hour",
+    "minutes": "minutes",
+    "seconds": "seconds"
+  },
+  "informationSection": {
+    "misc": {
+      "text": "Everything you need to know for the wedding"
+    },
+    "dresscode": {
+      "name": "Dress code",
+      "description": "Suit. We think you are wonderful just the way you are, the most important thing is that you feel comfortable."
+    },
+    "children": {
+      "name": "Children",
+      "description": "Children are wonderful, but on this day we choose to celebrate in the company of adults. Babies who are breastfed and cannot be left with a babysitter are of course welcome."
+    },
+    "gifts": {
+      "name": "Gifts",
+      "description": "The best gift is that we get to celebrate our day together with you. But if you still want to pay attention to our day with a gift, we appreciate a contribution to our wedding trip."
+    },
+    "rsvp": {
+      "name": "RSVP",
+      "description": "RSVP by January 31, 2024. You do this by filling out the form below."
+    },
+    "location": {
+      "name": "Location",
+      "description": "The wedding will take place in the botanical garden by the Pillar Stairs. The wedding party will be held in the Orangery."
+    },
+    "language": {
+      "name": "Byta språk?",
+      "description": "Vill du byta språk på sidan? Tryck på knappen nedan."
+    },
+    "button": "Översätt sidan"
+  },
+  "toastmastersSection": {
+    "title": "Meet our toastmasters",
+    "paragraph": "Do you have any questions or concerns don't hesitate to contact any of our toastmasters."
+  },
+  "rsvpSection": {
+    "misc": {
+      "title": "R.S.V.P"
+    },
+    "form": {
+      "firstName": {
+        "name": "First name"
+      },
+      "lastName": {
+        "name": "Last name"
+      },
+      "phone": {
+        "name": "Phone",
+        "placeholder": "0701234567"
+      },
+      "allergies/preferences": {
+        "name": "Allergies / preferences",
+        "placeholder": "If you dont' have any allergies or preferences you can leave this field empty."
+      },
+      "speech": {
+        "text": "I wish to give a speech."
+      },
+      "button": {
+        "default": "Send",
+        "sent": "Thank you for your submission",
+        "loading": "Sending ..."
+      },
+      "errors": {
+        "empty": "The field cannot be empty",
+        "wrong": "The field is filled in incorrectly"
+      }
+    }
+  }
+}

@@ -52,7 +52,7 @@ const Input = ({
     <div>
       <label
         htmlFor={id}
-        className="block text-sm font-semibold leading-6 text-gray-900"
+        className="block text-lg font-semibold leading-6 text-gray-900"
       >
         {name}
       </label>
@@ -62,7 +62,7 @@ const Input = ({
           type="text"
           name={id}
           id={id}
-          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-branch sm:text-sm sm:leading-6"
+          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-branch sm:text-md sm:leading-6"
           value={value}
           disabled={disabled}
           onChange={onChange}
@@ -70,7 +70,7 @@ const Input = ({
           {...rest}
         />
         {invalid && (
-          <span className="inline-block text-orange-600 text-xs pt-2 pl-3">
+          <span className="inline-block text-orange-600 text-sm pt-2 pl-3">
             {errorMessage}
           </span>
         )}

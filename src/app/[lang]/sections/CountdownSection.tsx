@@ -1,3 +1,4 @@
+"use client";
 import { RefObject } from "react";
 import Countdown from "../components/Countdown";
 

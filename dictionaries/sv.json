@@ -1,0 +1,78 @@
+{
+  "heroSection": {
+    "and": "och"
+  },
+  "countdownSection": {
+    "days": "dagar",
+    "hours": "timmar",
+    "minutes": "minuter",
+    "seconds": "sekunder"
+  },
+  "informationSection": {
+    "misc": {
+      "text": "Allt du behöver veta inför bröllopet"
+    },
+    "dresscode": {
+      "name": "Klädkod",
+      "description": "Kavaj. Vi tycker att du är fin som du är, det viktigaste är att du känner dig bekväm."
+    },
+    "children": {
+      "name": "Barn",
+      "description": "Barn är underbara men den här dagen väljer vi att fira i vuxet sällskap. Bebisar som ammas och inte kan lämnas med barnvakt är givetvis välkomna."
+    },
+    "gifts": {
+      "name": "Gåvor",
+      "description": "Den finaste gåvan är att vi får fira vår dag tillsammans med er. Men vill ni ändå uppmärksamma vår dag med en gåva så uppskattar vi ett bidrag till vår bröllopsresa."
+    },
+    "rsvp": {
+      "name": "OSA",
+      "description": "O.S.A senast 31 januari 2024. Du gör detta genom att fylla i formuläret nedan."
+    },
+    "location": {
+      "name": "Plats",
+      "description": "Bröllopet kommer äga rum i botaniska trädgården vid Pelartrappen. Bröllopsfesten kommer hållas i Orangeriet."
+    },
+    "language": {
+      "name": "Change Language?",
+      "description": "Are you canadian? Change language by pressing the button below."
+    },
+    "button": "Translate the page"
+  },
+  "toastmastersSection": {
+    "title": "Möt våra toastmasters",
+    "paragraph": "Har du frågor eller liknande så kan du höra av dig till någon av våra toastmasters."
+  },
+  "rsvpSection": {
+    "misc": {
+      "title": "O.S.A"
+    },
+    "form": {
+      "firstName": {
+        "name": "Förnamn"
+      },
+      "lastName": {
+        "name": "Efternamn"
+      },
+      "phone": {
+        "name": "Telefonnummer",
+        "placeholder": "0701234567"
+      },
+      "allergies/preferences": {
+        "name": "Allergier / matpreferenser",
+        "placeholder": "Har du inga allergier eller preferenser kan du lämna detta fält tomt."
+      },
+      "speech": {
+        "text": "Jag önskar hålla tal."
+      },
+      "button": {
+        "default": "Skicka",
+        "sent": "Tack för din anmälan",
+        "loading": "Skickar ..."
+      },
+      "errors": {
+        "empty": "Fältet kan ej lämnas tomt.",
+        "wrong": "Fältet är felaktigt ifyllt"
+      }
+    }
+  }
+}

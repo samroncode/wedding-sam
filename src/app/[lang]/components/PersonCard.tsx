@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Person } from "../models/Person";
+import { Person } from "../../models/Person";
 
 const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
   return (
