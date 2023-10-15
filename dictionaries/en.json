@@ -4,7 +4,7 @@
   },
   "countdownSection": {
     "days": "days",
-    "hours": "hour",
+    "hours": "hours",
     "minutes": "minutes",
     "seconds": "seconds"
   },
@@ -22,11 +22,11 @@
     },
     "gifts": {
       "name": "Gifts",
-      "description": "The best gift is that we get to celebrate our day together with you. But if you still want to pay attention to our day with a gift, we appreciate a contribution to our wedding trip."
+      "description": "The best gift is that we get to celebrate our day together with you. But if you still want to pay attention to our day with a gift, we appreciate a contribution to our honeymoon."
     },
     "rsvp": {
       "name": "RSVP",
-      "description": "RSVP by January 31, 2024. You do this by filling out the form below."
+      "description": "RSVP by January 31st, 2024. You do this by filling out the form below."
     },
     "location": {
       "name": "Location",
