@@ -8,15 +8,22 @@ import location from "../../../../public/icons/icons8-location-50.png";
 import mapleLeaf from "../../../../public/icons/icons8-maple-leaf-50.png";
 import Button from "../components/Button";
 import { useDictionaries } from "@/app/context/dictionaryContext";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const InformationSection = () => {
   const { informationSection } = useDictionaries();
 
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
-  const newPathname = pathname.includes("/en") ? "/sv" : "/en";
+  const staging = searchParams.has("staging");
+
+  let newPathname = pathname.includes("/en") ? "/sv" : "/en";
+
+  if (staging) {
+    newPathname += "?staging=true";
+  }
 
   const informationPuffs = [
     {
