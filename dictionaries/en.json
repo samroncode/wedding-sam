@@ -6,7 +6,10 @@
     "days": "days",
     "hours": "hours",
     "minutes": "minutes",
-    "seconds": "seconds"
+    "seconds": "seconds",
+    "misc": {
+      "text": "left until the 29th of June 2024"
+    }
   },
   "informationSection": {
     "misc": {
@@ -48,13 +51,19 @@
     },
     "form": {
       "firstName": {
-        "name": "First name"
+        "name": "First name *",
+        "placeholder": "First name"
       },
       "lastName": {
-        "name": "Last name"
+        "name": "Last name *",
+        "placeholder": "Last name"
+      },
+      "email": {
+        "name": "E-mail *",
+        "placeholder": "name@example.com"
       },
       "phone": {
-        "name": "Phone",
+        "name": "Phone *",
         "placeholder": "0701234567"
       },
       "allergies/preferences": {
@@ -72,6 +81,9 @@
       "errors": {
         "empty": "The field cannot be empty",
         "wrong": "The field is filled in incorrectly"
+      },
+      "requiredFields": {
+        "text": "* These fields are required"
       }
     }
   }

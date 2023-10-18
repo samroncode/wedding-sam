@@ -87,7 +87,7 @@ const InformationSection = () => {
                   {/change|språk/.test(puff.name.toLowerCase()) && (
                     <div className="mt-4">
                       <Button
-                        text="Translate the page"
+                        text={informationSection.button}
                         onClick={() => {
                           router.replace(newPathname);
                         }}

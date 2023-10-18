@@ -7,11 +7,13 @@ import { TextValidator } from "../../utils/validators/textValidator";
 import { NotEmptyValidator } from "../../utils/validators/NotEmptyValidator";
 import Button from "./Button";
 import { useDictionaries } from "@/app/context/dictionaryContext";
+import { EmailValidator } from "@/app/utils/validators/emailValidator";
 
 type ContactForm = {
   firstName: string;
   lastName: string;
   phone: string;
+  email: string;
   allergies_preferences: string;
   speech: boolean;
 };
@@ -21,6 +23,7 @@ const ContactForm = () => {
     firstName: "",
     lastName: "",
     phone: "",
+    email: "",
     allergies_preferences: "",
     speech: false
   };
@@ -46,6 +49,7 @@ const ContactForm = () => {
       Förnamn: form.firstName,
       Efternamn: form.lastName,
       Telefon: form.phone,
+      "E-post": form.email,
       "Allergier/preferenser": form.allergies_preferences,
       "Önskar hålla tal": form.speech ? "Ja" : "Nej"
     };
@@ -76,14 +80,18 @@ const ContactForm = () => {
   };
 
   useEffect(() => {
-    const { firstName, lastName } = form;
+    const { firstName, lastName, email } = form;
 
-    setFormValid(TextValidator(firstName) && TextValidator(lastName));
+    setFormValid(
+      TextValidator(firstName) &&
+        TextValidator(lastName) &&
+        EmailValidator(email)
+    );
   }, [form]);
 
   const inputsDisabled =
     requestStatus === "pending" || requestStatus === "success";
-  const buttonDisabled = !formValid || requestStatus === "pending";
+  const buttonDisabled = !formValid || requestStatus !== "idle";
 
   let buttonText = rsvpSection.form.button.default;
 
@@ -108,6 +116,7 @@ const ContactForm = () => {
             required
             id="first-name"
             name={rsvpSection.form.firstName.name}
+            placeholder={rsvpSection.form.firstName.placeholder}
             type="text"
             autoComplete="given-name"
             value={form.firstName}
@@ -124,6 +133,7 @@ const ContactForm = () => {
             required
             id="last-name"
             name={rsvpSection.form.lastName.name}
+            placeholder={rsvpSection.form.lastName.placeholder}
             type="text"
             autoComplete="family-name"
             value={form.lastName}
@@ -132,6 +142,23 @@ const ContactForm = () => {
             validator={TextValidator}
             errorMessage={
               !form.lastName
+                ? rsvpSection.form.errors.empty
+                : rsvpSection.form.errors.wrong
+            }
+          />
+          <Input
+            required
+            id="email"
+            name={rsvpSection.form.email.name}
+            type="email"
+            autoComplete="email"
+            placeholder={rsvpSection.form.email.placeholder}
+            value={form.email}
+            onChange={e => setForm({ ...form, email: e.target.value })}
+            disabled={inputsDisabled}
+            validator={EmailValidator}
+            errorMessage={
+              !form.email
                 ? rsvpSection.form.errors.empty
                 : rsvpSection.form.errors.wrong
             }
@@ -149,10 +176,11 @@ const ContactForm = () => {
             validator={NotEmptyValidator}
             errorMessage={
               !form.phone
-              ? rsvpSection.form.errors.empty
-              : rsvpSection.form.errors.wrong
+                ? rsvpSection.form.errors.empty
+                : rsvpSection.form.errors.wrong
             }
           />
+
           <div className="sm:col-span-2">
             <label
               htmlFor="allergies_preferences"
@@ -177,6 +205,9 @@ const ContactForm = () => {
               />
             </div>
           </div>
+          <p className="pt-4 text-xs text-gray-700">
+            {rsvpSection.form.requiredFields.text}
+          </p>
           <div className="sm:col-span-2">
             <Toggle
               toggled={form.speech}

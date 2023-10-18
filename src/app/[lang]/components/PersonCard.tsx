@@ -5,7 +5,11 @@ const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
   return (
     <li key={name}>
       <div className="mx-auto rounded-full relative w-52 h-52 overflow-hidden">
-        <Image src={imageUrl} alt={""} fill />
+        <Image
+          src={imageUrl}
+          alt={""}
+          fill={name !== "Isabella Hågestam Lindell"}
+        />
       </div>
       <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
         {name}
@@ -19,7 +23,7 @@ const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
               className="flex flex-row text-gray-400 hover:text-gray-500"
             >
               <svg
-                className="h-5 w-5 mr-3"
+                className="h-5 w-5 mr-1 mb-0.5"
                 viewBox="0 0 24 24"
                 id="phone_number"
                 data-name="phone number"

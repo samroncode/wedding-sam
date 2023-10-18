@@ -6,7 +6,7 @@ interface InputProps
   extends InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
   label?: string;
   rows?: number;
-  type?: "text" | "textarea" | "tel";
+  type?: "text" | "textarea" | "tel" | "email";
   errorMessage?: string;
   validator?: (text: any, min?: number, max?: number) => any;
 }
@@ -62,6 +62,7 @@ const Input = ({
           type="text"
           name={id}
           id={id}
+          placeholder={placeholder}
           className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-branch sm:text-md sm:leading-6"
           value={value}
           disabled={disabled}

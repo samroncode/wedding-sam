@@ -16,6 +16,9 @@ export type CountdownDictionary = {
     hours: string;
     minutes: string;
     seconds: string;
+    misc: {
+      text: string;
+    };
   };
 };
 
@@ -48,6 +51,7 @@ export type InformationDictionary = {
       name: string;
       description: string;
     };
+    button: string;
   };
 };
 
@@ -66,11 +70,17 @@ export type RSVPDictionary = {
     form: {
       firstName: {
         name: string;
+        placeholder: string;
       };
       lastName: {
         name: string;
+        placeholder: string;
       };
       phone: {
+        name: string;
+        placeholder: string;
+      };
+      email: {
         name: string;
         placeholder: string;
       };
@@ -89,6 +99,9 @@ export type RSVPDictionary = {
       errors: {
         empty: string;
         wrong: string;
+      };
+      requiredFields: {
+        text: string;
       };
     };
   };

@@ -6,7 +6,10 @@
     "days": "dagar",
     "hours": "timmar",
     "minutes": "minuter",
-    "seconds": "sekunder"
+    "seconds": "sekunder",
+    "misc": {
+      "text": "kvar till 29e juni 2024"
+    }
   },
   "informationSection": {
     "misc": {
@@ -48,13 +51,19 @@
     },
     "form": {
       "firstName": {
-        "name": "Förnamn"
+        "name": "Förnamn *",
+        "placeholder": "Förnamn"
       },
       "lastName": {
-        "name": "Efternamn"
+        "name": "Efternamn *",
+        "placeholder": "Efternamn"
+      },
+      "email": {
+        "name": "E-post *",
+        "placeholder": "exempel@email.com"
       },
       "phone": {
-        "name": "Telefonnummer",
+        "name": "Telefonnummer *",
         "placeholder": "0701234567"
       },
       "allergies/preferences": {
@@ -72,6 +81,9 @@
       "errors": {
         "empty": "Fältet kan ej lämnas tomt.",
         "wrong": "Fältet är felaktigt ifyllt"
+      },
+      "requiredFields": {
+        "text": "* Dessa fält måste fyllas i"
       }
     }
   }
