@@ -7,7 +7,7 @@ import { TextValidator } from "../../utils/validators/textValidator";
 import { NotEmptyValidator } from "../../utils/validators/NotEmptyValidator";
 import Button from "./Button";
 import { useDictionaries } from "@/app/context/dictionaryContext";
-import { EmailValidator } from "@/app/utils/validators/emailValidator";
+import { EmailValidator } from "@/app/utils/validators/EmailValidator";
 
 type ContactForm = {
   firstName: string;
