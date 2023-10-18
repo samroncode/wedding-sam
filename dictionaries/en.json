@@ -47,7 +47,8 @@
   },
   "rsvpSection": {
     "misc": {
-      "title": "R.S.V.P"
+      "title": "R.S.V.P",
+      "description": "Fill in the form once per guest."
     },
     "form": {
       "firstName": {

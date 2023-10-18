@@ -66,6 +66,7 @@ export type RSVPDictionary = {
   rsvpSection: {
     misc: {
       title: string;
+      description: string;
     };
     form: {
       firstName: {

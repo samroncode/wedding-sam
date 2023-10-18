@@ -47,7 +47,8 @@
   },
   "rsvpSection": {
     "misc": {
-      "title": "O.S.A"
+      "title": "O.S.A",
+      "description": "Fyll i formuläret en gång per gäst."
     },
     "form": {
       "firstName": {

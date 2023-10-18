@@ -105,6 +105,7 @@ const ContactForm = () => {
         <h2 className="text-3xl tracking-tight text-gray-900 sm:text-4xl">
           {rsvpSection.misc.title}
         </h2>
+        <p className="pt-4 text-lg">{rsvpSection.misc.description}</p>
       </div>
       <form
         action="#"
