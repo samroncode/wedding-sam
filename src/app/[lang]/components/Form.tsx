@@ -8,6 +8,7 @@ import { NotEmptyValidator } from "../../utils/validators/NotEmptyValidator";
 import Button from "./Button";
 import { useDictionaries } from "@/app/context/dictionaryContext";
 import { EmailValidator } from "@/app/utils/validators/EmailValidator";
+import { PhoneNumberValidator } from "@/app/utils/validators/PhoneNumberValidator";
 
 type ContactForm = {
   firstName: string;
@@ -48,7 +49,7 @@ const ContactForm = () => {
     const newRow = {
       Förnamn: form.firstName,
       Efternamn: form.lastName,
-      Telefon: form.phone,
+      Telefon: form.phone.replace(/\s+/g, ""),
       "E-post": form.email,
       "Allergier/preferenser": form.allergies_preferences,
       "Önskar hålla tal": form.speech ? "Ja" : "Nej"
@@ -80,11 +81,12 @@ const ContactForm = () => {
   };
 
   useEffect(() => {
-    const { firstName, lastName, email } = form;
+    const { firstName, lastName, email, phone } = form;
 
     setFormValid(
       TextValidator(firstName) &&
         TextValidator(lastName) &&
+        PhoneNumberValidator(phone) &&
         EmailValidator(email)
     );
   }, [form]);
@@ -174,7 +176,7 @@ const ContactForm = () => {
             value={form.phone}
             onChange={e => setForm({ ...form, phone: e.target.value })}
             disabled={inputsDisabled}
-            validator={NotEmptyValidator}
+            validator={PhoneNumberValidator}
             errorMessage={
               !form.phone
                 ? rsvpSection.form.errors.empty
