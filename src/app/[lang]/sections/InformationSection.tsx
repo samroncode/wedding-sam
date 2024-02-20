@@ -82,7 +82,7 @@ const InformationSection = () => {
                     <p>{puff.name}</p>
                   </div>
                   <div className="mt-2 text-base leading-7 text-gray-600">
-                    <p>{puff.description}</p>
+                    <p className="whitespace-pre-line">{puff.description}</p>
                   </div>
                   {/change|språk/.test(puff.name.toLowerCase()) && (
                     <div className="mt-4">
