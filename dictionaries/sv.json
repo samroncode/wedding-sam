@@ -15,6 +15,7 @@
     "misc": {
       "text": "Allt du behöver veta inför bröllopet"
     },
+    "info": {"name": "Information", "description": "Fördrink serveras vid pelartrappan 15:45 och vigseln äger rum 16.00."},
     "dresscode": {
       "name": "Klädkod",
       "description": "Kavaj. Vi tycker att du är fin som du är, det viktigaste är att du känner dig bekväm."

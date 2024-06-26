@@ -15,6 +15,10 @@
     "misc": {
       "text": "Everything you need to know about the wedding"
     },
+    "info": {
+      "name": "Information",
+      "description": "Pre-drinks are served at the pillared stairs at 3:45 p.m. and the wedding takes place at 4 p.m."
+    },
     "dresscode": {
       "name": "Dress code",
       "description": "Suit. We think you are wonderful just the way you are, the most important thing is that you feel comfortable."

@@ -27,6 +27,7 @@ export type InformationDictionary = {
     misc: {
       text: string;
     };
+    info: { name: string; description: string };
     dresscode: {
       name: string;
       description: string;

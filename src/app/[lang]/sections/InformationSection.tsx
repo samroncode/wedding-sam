@@ -1,14 +1,17 @@
 "use client";
-import Image from "next/image";
-import suit from "../../../../public/icons/icons8-suit-50.png";
-import stroller from "../../../../public/icons/icons8-child-50.png";
-import gift from "../../../../public/icons/icons8-wedding-gift-50.png";
-import letter from "../../../../public/icons/icons8-letter-50.png";
-import location from "../../../../public/icons/icons8-location-50.png";
-import mapleLeaf from "../../../../public/icons/icons8-maple-leaf-50.png";
-import Button from "../components/Button";
-import { useDictionaries } from "@/app/context/dictionaryContext";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import Image from 'next/image'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+
+import { useDictionaries } from '@/app/context/dictionaryContext'
+
+import stroller from '../../../../public/icons/icons8-child-50.png'
+import information from '../../../../public/icons/icons8-information-50.png'
+import letter from '../../../../public/icons/icons8-letter-50.png'
+import location from '../../../../public/icons/icons8-location-50.png'
+import mapleLeaf from '../../../../public/icons/icons8-maple-leaf-50.png'
+import suit from '../../../../public/icons/icons8-suit-50.png'
+import gift from '../../../../public/icons/icons8-wedding-gift-50.png'
+import Button from '../components/Button'
 
 const InformationSection = () => {
   const { informationSection } = useDictionaries();
@@ -26,6 +29,11 @@ const InformationSection = () => {
   }
 
   const informationPuffs = [
+    {
+      name: informationSection.info.name,
+      description: informationSection.info.description,
+      icon: information
+    },
     {
       name: informationSection.dresscode.name,
       description: informationSection.dresscode.description,
