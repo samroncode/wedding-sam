@@ -1,7 +1,7 @@
 "use client";
-import cemil from "../../../../public/cemil.jpeg";
-import elin from "../../../../public/elin2-cropped.jpeg";
-import isabella from "../../../../public/isabella2.jpg";
+import cemil from "../../../public/cemil.jpeg";
+import elin from "../../../public/elin2-cropped.jpeg";
+import isabella from "../../../public/isabella2.jpg";
 import { Person } from "@/app/models/Person";
 import PersonCard from "../components/PersonCard";
 import { useDictionaries } from "@/app/context/dictionaryContext";

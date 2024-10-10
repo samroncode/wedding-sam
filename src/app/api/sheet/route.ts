@@ -9,13 +9,13 @@ export async function POST(request: Request) {
     process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
 
   const serviceAccountAuth = new JWT({
-    email: GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    key: GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+    email: process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL,
+    key: process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
     scopes: ["https://www.googleapis.com/auth/spreadsheets"]
   });
 
   const doc = new GoogleSpreadsheet(
-    "1CY-t9kOsbRXQCmQymhcEtdjUgue_Y_pz_RoRXJeo5XE",
+    "1ciOHONcOoSzdlqbC6FL3MXax6nmXxAn2R_U3wScJf0A",
     serviceAccountAuth
   );
 

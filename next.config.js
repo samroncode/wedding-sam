@@ -10,15 +10,6 @@ module.exports = {
     }
     return config;
   },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/sv",
-        permanent: true
-      }
-    ];
-  },
   env: {
     GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY:
       process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,

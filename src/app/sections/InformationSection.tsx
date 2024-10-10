@@ -4,13 +4,13 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 
 import { useDictionaries } from '@/app/context/dictionaryContext'
 
-import stroller from '../../../../public/icons/icons8-child-50.png'
-import information from '../../../../public/icons/icons8-information-50.png'
-import letter from '../../../../public/icons/icons8-letter-50.png'
-import location from '../../../../public/icons/icons8-location-50.png'
-import mapleLeaf from '../../../../public/icons/icons8-maple-leaf-50.png'
-import suit from '../../../../public/icons/icons8-suit-50.png'
-import gift from '../../../../public/icons/icons8-wedding-gift-50.png'
+import stroller from '../../../public/icons/icons8-child-50.png'
+import information from '../../../public/icons/icons8-information-50.png'
+import letter from '../../../public/icons/icons8-letter-50.png'
+import location from '../../../public/icons/icons8-location-50.png'
+import mapleLeaf from '../../../public/icons/icons8-maple-leaf-50.png'
+import suit from '../../../public/icons/icons8-suit-50.png'
+import gift from '../../../public/icons/icons8-wedding-gift-50.png'
 import Button from '../components/Button'
 
 const InformationSection = () => {
@@ -59,11 +59,6 @@ const InformationSection = () => {
       description: informationSection.location.description,
       icon: location
     },
-    {
-      name: informationSection.language.name,
-      description: informationSection.language.description,
-      icon: mapleLeaf
-    }
   ];
 
   return (

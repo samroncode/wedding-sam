@@ -3,8 +3,8 @@
 import React, { SyntheticEvent, useEffect, useState } from "react";
 import Toggle from "./Toggle";
 import Input from "./Input";
-import { TextValidator } from "../../utils/validators/textValidator";
-import { NotEmptyValidator } from "../../utils/validators/NotEmptyValidator";
+import { TextValidator } from "../utils/validators/textValidator";
+import { NotEmptyValidator } from "../utils/validators/NotEmptyValidator";
 import Button from "./Button";
 import { useDictionaries } from "@/app/context/dictionaryContext";
 import { EmailValidator } from "@/app/utils/validators/EmailValidator";

@@ -7,6 +7,7 @@ export type Dictionary = HeroDictionary &
 export type HeroDictionary = {
   heroSection: {
     and: string;
+    the: string;
   };
 };
 

@@ -1,6 +1,7 @@
 {
   "heroSection": {
-    "and": "och"
+    "and": "och",
+    "the": "the"
   },
   "countdownSection": {
     "days": "dagar",
@@ -8,7 +9,7 @@
     "minutes": "minuter",
     "seconds": "sekunder",
     "misc": {
-      "text": "kvar till 29e juni 2024"
+      "text": "kvar till 31e Maj 2025"
     }
   },
   "informationSection": {

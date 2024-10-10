@@ -1,9 +1,9 @@
 import React, { CSSProperties } from "react";
-import { useCountdown } from "../../hooks/useCountdown";
+import { useCountdown } from "../hooks/useCountdown";
 import { useDictionaries } from "@/app/context/dictionaryContext";
 
 const Countdown = () => {
-  const countdownDate = "2024-06-29T16:00:00";
+  const countdownDate = "2025-05-31T11:00:00";
   const { countdownSection } = useDictionaries();
   const [days, hours, minutes, seconds] = useCountdown(countdownDate);
 
