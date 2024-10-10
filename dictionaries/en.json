@@ -1,6 +1,7 @@
 {
   "heroSection": {
-    "and": "and"
+    "and": "and",
+    "the" : "the"
   },
   "countdownSection": {
     "days": "days",
