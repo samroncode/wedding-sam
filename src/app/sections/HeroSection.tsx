@@ -53,9 +53,9 @@ const HeroSection = ({ sectionRef }: IHeroSection) => {
           <br></br>          
           <br></br>
           <h1 className="font-unJourMerveilleux">
-          Maja {" "}
+          Sam {" "}
           <span className="font-unJourMerveilleux">{heroSection.and}</span>{" "}
-          Sam
+          Maja
           <br/>
           <br/>
         </h1>
