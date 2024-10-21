@@ -34,6 +34,10 @@ const HeroSection = ({ sectionRef }: IHeroSection) => {
       <div className="z-0 absolute -right-[70%] lg:-right-[10%] -top-[50%] lg:-top-[15%] transform-gpu -rotate-[205deg] lg:-rotate-[165deg]">
         <Image src={flower} alt="flower" loading="lazy" />
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <div className="z-10 ml-5 lg:ml-1" style={centerText}>
         <h1 className="font-leJourSerif">
           Save {" "}
@@ -47,10 +51,6 @@ const HeroSection = ({ sectionRef }: IHeroSection) => {
           <h3 className="font-josefinSans" style={styleObj} >Mer info kommer</h3>
           <br></br>
           <br></br>          
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
           <br></br>
           <h1 className="font-unJourMerveilleux">
           Maja {" "}
