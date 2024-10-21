@@ -11,7 +11,7 @@ const CountdownSection = ({ sectionRef }: ICountdownSection) => {
   const { countdownSection } = useDictionaries();
   return (
     <section
-      className="flex flex-col items-center justify-center"
+      className="relative flex flex-col items-center justify-center"
       ref={sectionRef}
     >
       <Countdown />

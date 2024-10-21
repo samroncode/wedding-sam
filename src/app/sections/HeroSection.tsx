@@ -63,7 +63,7 @@ const HeroSection = ({ sectionRef }: IHeroSection) => {
       <div className="z-10 absolute bottom-10 lg:bottom-20">
         <ScrollDown onClick={handleScrollTo} />
       </div>
-      <div className="z-0 absolute -left-[143%] lg:-left-[10%] -bottom-[30%] lg:-bottom-[10%] transform-gpu rotate-[0deg] lg:rotate-[25deg]">
+      <div className="z-n1 absolute -left-[143%] lg:-left-[10%] -bottom-[30%] lg:-bottom-[10%] transform-gpu rotate-[0deg] lg:rotate-[25deg]">
         <Image src={flower} alt="flower" loading="lazy" />
       </div>
     </section>
