@@ -1,29 +1,22 @@
 "use client";
-import cemil from "../../../public/cemil.jpeg";
-import elin from "../../../public/elin2-cropped.jpeg";
-import isabella from "../../../public/isabella2.jpg";
+import lotta from "../../../public/Lotta.jpeg";
+//import person2 from "../../../public/person2.jpeg";
 import { Person } from "@/app/models/Person";
 import PersonCard from "../components/PersonCard";
 import { useDictionaries } from "@/app/context/dictionaryContext";
 
 const people: Person[] = [
   {
-    name: "Elin Eldh Rinaldo",
+    name: "Lotta Åhag",
     role: "Toastmadame",
-    imageUrl: elin,
-    phoneNumber: "076 800 67 37"
+    imageUrl: lotta,
+    phoneNumber: "xxx xxx xx xx"
   },
   {
-    name: "Cemil Alparslan",
+    name: "person person",
     role: "Toastmaster",
-    imageUrl: cemil,
-    phoneNumber: "073 729 31 79"
-  },
-  {
-    name: "Isabella Hågestam Lindell",
-    role: "Toastmadame",
-    imageUrl: isabella,
-    phoneNumber: "070 889 88 79"
+    imageUrl: lotta,
+    phoneNumber: "xxx xxx xx xx"
   }
 ];
 
@@ -40,14 +33,14 @@ const ToastMastersSection = () => {
             {toastmastersSection.paragraph}
           </p>
         </div>
-        <ul
+        {/* <ul
           role="list"
           className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
         >
           {people.map((person, key) => (
             <PersonCard key={key} {...person} />
           ))}
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

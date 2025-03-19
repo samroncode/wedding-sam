@@ -36,14 +36,12 @@ const HeroSection = ({ sectionRef }: IHeroSection) => {
       </div>
       <div className="z-10 ml-5 lg:ml-1" style={centerText}>
         <h1 className="font-leJourSerif">
-          Save {" "}
-          <span className="font-unJourMerveilleux">{heroSection.the}</span>{" "}
-          Date
+          Vi gifter oss 
+          <br/>
           <br/>
         </h1>
           <h3 className="font-josefinSans" style={styleObj} >Vi gifter oss den 31 maj 2025 i Skövde</h3>
           <h3 className="font-josefinSans" style={styleObj} >Hoppas att ni vill vara med och förgylla vår dag!</h3>
-          <h3 className="font-josefinSans" style={styleObj} >Mer info kommer</h3> 
           <br/>
           <br/>
           <h1 className="font-unJourMerveilleux">

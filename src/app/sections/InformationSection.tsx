@@ -101,6 +101,30 @@ const InformationSection = () => {
               );
             })}
           </div>
+          <br/>
+          <br/>
+          <div className='lg:text-center'>
+            <h2>Tips på boenden i Skövde:</h2>
+            <br/>
+            <h3><a href='https://karstorp.se/' target="_blank">Karstorps säteri</a></h3>
+            Hotell och konferens, vackert beläget vid Karstorpsjön. 5 minuter med bil till Aspö gård.
+            <br/>
+            <br/>
+            <h3><a href='https://billingehus.com/' target="_blank">Billingehus</a></h3>
+            Nyrenoverat hotell med spa, ligger på toppen av Billingen med närhet till fina motionspår. 8-10 min till Aspö gård med bil.
+            <br/>
+            <br/>
+            <h3><a href='https://billingensstugby.se/' target="_blank">Billingens stugby och camping</a></h3>
+            Ligger uppe på billingen, 8-10 min till Aspö gård med bil
+            <br/>
+            <br/>
+            <h3><a href='https://vasterhojdsgarden.se/' target="_blank">Västerhöjdsgården</a></h3>
+            B&B 7 min från Aspö gård med bil, 12 min promenad från resecentrum(850m)
+            <br/>
+            <br/>
+            <h3><a href='https://www.strawberry.se/hotell/sverige/skovde/quality-hotel-prisma/' target="_blank">Quality hotell prisma</a></h3>
+            8-10 min med bil från Aspö gård, 600m från resecentrum.
+          </div>
         </div>
       </div>
     </section>

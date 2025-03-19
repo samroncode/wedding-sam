@@ -16,6 +16,9 @@ export default function Home(){
             <div className="z-10 max-w-5xl w-full flex-col items-center justify-center font-mono text-sm lg:flex">
               <HeroSection sectionRef={ref} />
               <CountdownSection sectionRef={ref} />
+              <InformationSection/>
+              <ToastMastersSection/>
+              <RSVPSection/>
             </div>
           </main>
         </div>

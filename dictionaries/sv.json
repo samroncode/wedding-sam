@@ -16,26 +16,26 @@
     "misc": {
       "text": "Allt du behöver veta inför bröllopet"
     },
-    "info": {"name": "Information", "description": "Fördrink serveras vid pelartrappan 15:45 och vigseln äger rum 16.00."},
+    "info": {"name": "Information", "description": "Vigsel äger rum i kyrka just utanför Skövde kl 14:00. Fördrink serveras på Gula Villan, Aspö gård kl 15:15, där även bröllopsfesten kommer att hållas. Ytterliggare information inom kort."},
     "dresscode": {
       "name": "Klädkod",
-      "description": "Kavaj. Vi tycker att du är fin som du är, det viktigaste är att du känner dig bekväm."
+      "description": "Kavaj"
     },
     "children": {
       "name": "Barn",
-      "description": "Barn är underbara men den här dagen väljer vi att fira i vuxet sällskap. Bebisar som ammas och inte kan lämnas med barnvakt är givetvis välkomna."
+      "description": "Barn är underbara men den här dagen väljer vi i första hand att fira i vuxet sällskap. Spädbarn och ammande barn som inte kan lämnas med barnvakt är givetvis välkomna."
     },
     "gifts": {
       "name": "Gåvor",
-      "description": "Den finaste gåvan är att vi får fira vår dag tillsammans med er. Men vill ni ändå uppmärksamma vår dag med en gåva så uppskattar vi ett bidrag till vår bröllopsresa. Detta kan ni göra genom att swisha Philip Åkerfeldt \n (076 - 26 23 871) och märka betalningen med 'Bröllopsresa'"
+      "description": "Den finaste gåvan är att vi får fira vår dag tillsammans med er. "
     },
     "rsvp": {
       "name": "OSA",
-      "description": "O.S.A senast 31 januari 2024. Du gör detta genom att fylla i formuläret nedan."
+      "description": "O.S.A senast 30onde April 2025. Du gör detta genom att fylla i formuläret nedan."
     },
     "location": {
       "name": "Plats",
-      "description": "Bröllopet kommer äga rum i botaniska trädgården vid Pelartrappen. Bröllopsfesten kommer hållas i Orangeriet."
+      "description": "Bröllopet kommer äga rum i kyrka strax utanför Skövde. Bröllopsfesten kommer hållas i Gula villan på Aspö gård."
     },
     "language": {
       "name": "Change Language?",
@@ -44,8 +44,8 @@
     "button": "Translate the page"
   },
   "toastmastersSection": {
-    "title": "Möt våra toastmasters",
-    "paragraph": "Har du frågor eller liknande så kan du höra av dig till någon av våra toastmasters."
+    "title": "Frågor",
+    "paragraph": "Har du frågor eller liknande så kan du höra av dig till brudparet eller toastmadame Lotta Åhag."
   },
   "rsvpSection": {
     "misc": {
