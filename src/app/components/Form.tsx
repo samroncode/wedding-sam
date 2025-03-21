@@ -58,17 +58,16 @@ const ContactForm = () => {
     setRequestStatus("pending");
 
     try {
-      const response = await fetch("/api/sheet", {
+
+      const response = await fetch("/api/sheet/", {
         method: "POST",
         body: JSON.stringify(newRow),
         headers: {
           "Content-Type": "application/json"
         }
       });
-
       if (response.status === 200) {
         setRequestStatus("success");
-
         setTimeout(() => {
           setRequestStatus("idle");
           resetForm();
@@ -76,7 +75,6 @@ const ContactForm = () => {
       }
     } catch (error) {
       setRequestStatus("error");
-      console.error(error);
     }
   };
 

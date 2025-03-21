@@ -6,14 +6,13 @@ export async function POST(request: Request) {
   const GOOGLE_SERVICE_ACCOUNT_EMAIL =
     process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL;
   const GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY =
-    process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+    process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY3;
 
   const serviceAccountAuth = new JWT({
     email: process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    key: process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
+    key: GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY?.replace(/\\n/g, "\n"),
     scopes: ["https://www.googleapis.com/auth/spreadsheets"]
   });
-
   const doc = new GoogleSpreadsheet(
     "1ciOHONcOoSzdlqbC6FL3MXax6nmXxAn2R_U3wScJf0A",
     serviceAccountAuth
@@ -21,7 +20,7 @@ export async function POST(request: Request) {
 
   try {
     await doc.loadInfo();
-
+    
     const sheet = doc.sheetsByIndex[0];
     const body = await request.json();
 
