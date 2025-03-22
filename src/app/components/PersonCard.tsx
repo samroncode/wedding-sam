@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Person } from "../models/Person";
 
-const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
+const PersonCard = ({ name, imageUrl, role, phoneNumber, email }: Person) => {
   return (
     <li key={name}>
       <div className="mx-auto rounded-full relative w-52 h-52 overflow-hidden">
@@ -49,6 +49,10 @@ const PersonCard = ({ name, imageUrl, role, phoneNumber }: Person) => {
                 </g>
               </svg>
               {phoneNumber}
+            </a>
+            <a href={`mailto:${email}`}
+            className="flex flex-row text-gray-400 hover:text-gray-500">
+              {email}
             </a>
           </p>
         </li>

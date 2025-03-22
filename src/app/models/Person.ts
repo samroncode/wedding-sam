@@ -5,4 +5,5 @@ export type Person = {
   role: string;
   imageUrl: StaticImageData;
   phoneNumber: string;
+  email: string
 };

@@ -9,7 +9,8 @@ const people: Person[] = [
     name: "Lotta Åhag",
     role: "Toastmadame",
     imageUrl: lotta,
-    phoneNumber: "0730448338"
+    phoneNumber: "0730448338",
+    email: "Lotta.ahag@gmail.com"
   },
   
 ];
