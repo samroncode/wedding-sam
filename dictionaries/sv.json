@@ -16,7 +16,7 @@
     "misc": {
       "text": "Allt du behöver veta inför bröllopet"
     },
-    "info": {"name": "Information", "description": "Vigsel äger rum i kyrka just utanför Skövde kl 14:00. Fördrink serveras på Gula Villan, Aspö gård ungefär kl 16:00, där även bröllopsfesten kommer att hållas. Ytterliggare information inom kort."},
+    "info": {"name": "Information", "description": "Vigsel äger rum i Lerdala kyrka utanför Skövde kl 14:00. Fördrink serveras på Gula Villan, Aspö gård ungefär kl 16:00, där även bröllopsfesten kommer att hållas. Ytterliggare information inom kort."},
     "dresscode": {
       "name": "Klädkod",
       "description": "Kavaj"
@@ -35,7 +35,7 @@
     },
     "location": {
       "name": "Plats",
-      "description": "Bröllopet kommer äga rum i kyrka strax utanför Skövde. Bröllopsfesten kommer hållas i Gula villan på Aspö gård."
+      "description": "Bröllopet kommer äga rum i Lerdala kyrka utanför Skövde. Bröllopsfesten kommer hållas i Gula villan på Aspö gård."
     },
     "language": {
       "name": "Change Language?",
