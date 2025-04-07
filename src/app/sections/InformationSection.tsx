@@ -107,7 +107,7 @@ const InformationSection = () => {
             <h2>Tips på boenden i Skövde:</h2>
             <br/>
             <h3><a href='https://karstorp.se/' target="_blank">Karstorps säteri</a></h3>
-            Hotell och konferens, vackert beläget vid Karstorpsjön. 5 minuter med bil till Aspö gård.
+            Hotell och konferens, vackert beläget vid Karstorpsjön. 5 minuter med bil till Aspö gård. För den hurtige är det 15 minuters promenad genom skogen.
             <br/>
             <br/>
             <h3><a href='https://billingehus.com/' target="_blank">Billingehus</a></h3>
@@ -119,7 +119,7 @@ const InformationSection = () => {
             <br/>
             <br/>
             <h3><a href='https://vasterhojdsgarden.se/' target="_blank">Västerhöjdsgården</a></h3>
-            B&B 7 min från Aspö gård med bil, 12 min promenad från resecentrum(850m)
+             7 min från Aspö gård med bil, 12 min promenad från resecentrum(850m)
             <br/>
             <br/>
             <h3><a href='https://www.strawberry.se/hotell/sverige/skovde/quality-hotel-prisma/' target="_blank">Quality hotell prisma</a></h3>

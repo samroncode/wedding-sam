@@ -16,18 +16,18 @@
     "misc": {
       "text": "Allt du behöver veta inför bröllopet"
     },
-    "info": {"name": "Information", "description": "Vigsel äger rum i Lerdala kyrka utanför Skövde kl 14:00. Fördrink serveras på Gula Villan, Aspö gård ungefär kl 16:00, där även bröllopsfesten kommer att hållas. Ytterliggare information inom kort."},
+    "info": {"name": "Information", "description": "Vigseln äger rum i Lerdala kyrka utanför Skövde kl 14:00. Fördrink serveras på Gula Villan, Aspö gård ungefär kl 16:00, där även bröllopsfesten kommer att hållas. Håll dig gärna uppdaterad på hemsidan."},
     "dresscode": {
       "name": "Klädkod",
       "description": "Kavaj"
     },
     "children": {
       "name": "Barn",
-      "description": "Barn är underbara men den här dagen väljer vi i första hand att fira i vuxet sällskap. Spädbarn och ammande barn som inte kan lämnas med barnvakt är givetvis välkomna."
+      "description": "Barn är underbara men den här dagen väljer vi att fira i vuxet sällskap. Spädbarn och ammande barn som inte kan lämnas med barnvakt är givetvis välkomna."
     },
     "gifts": {
       "name": "Gåvor",
-      "description": "Den finaste gåvan är att vi får fira vår dag tillsammans med er. "
+      "description": "Den finaste gåvan är att vi får fira vår dag tillsammans med er. Då flera gäster reser långt utan bil så får man gärna, om man bor i närheten och har bil, höra av sig till toastmadame om man kan ta med sig gäster till och från kyrkan. Kan och vill man får man gärna donera en liten slant till Läkare utan gränser eller Unicef."
     },
     "rsvp": {
       "name": "OSA",
@@ -35,7 +35,7 @@
     },
     "location": {
       "name": "Plats",
-      "description": "Bröllopet kommer äga rum i Lerdala kyrka utanför Skövde. Bröllopsfesten kommer hållas i Gula villan på Aspö gård."
+      "description": "Vigseln kommer äga rum i Lerdala kyrka utanför Skövde. Bröllopsfesten kommer hållas i Gula villan på Aspö gård."
     },
     "language": {
       "name": "Change Language?",
@@ -45,7 +45,7 @@
   },
   "toastmastersSection": {
     "title": "Frågor",
-    "paragraph": "Har du frågor eller liknande så kan du höra av dig till brudparet eller toastmadame Lotta Åhag."
+    "paragraph": "Har du frågor eller liknande så kan du höra av dig till toastmadame Lotta Åhag."
   },
   "rsvpSection": {
     "misc": {
