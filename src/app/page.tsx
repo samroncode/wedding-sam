@@ -18,7 +18,6 @@ export default function Home(){
               <CountdownSection sectionRef={ref} />
               <InformationSection/>
               <ToastMastersSection/>
-              <RSVPSection/>
             </div>
           </main>
         </div>
